@@ -1,3 +1,3 @@
 # textlint-reviewdog-sample
-This istn miss.
+Thsi ints miss.
 
