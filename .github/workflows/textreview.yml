@@ -23,7 +23,7 @@ jobs:
       - uses: actions/checkout@v2
 
       - name: Install textlint
-        run:  'npm install --save-dev textlint textlint-rule-common-misspellings'
+        run:  'npm install --save-dev textlint textlint-rule-no-mix-dearu-desumasu'
       
       - name: Install dependent module
         run: npm install
@@ -35,10 +35,10 @@ jobs:
 
       - name: Execute textlint for README.md
         run: |
-          npx textlint -f checkstyle --rule common-misspellings README.md >> .textlint.log
+          npx textlint -f checkstyle  README.md >> .textlint.log
 
       - name: Run reviewdog
-        if: always()
+        if: failure()
         env:
           REVIEWDOG_GITHUB_API_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
