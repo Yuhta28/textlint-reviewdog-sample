@@ -9,7 +9,7 @@ jobs:
       - checkout
       - run:
           name: "Install textlint"
-          command: npm install --save-dev textlint textlint-rule-common-misspellings
+          command: npm install --save-dev textlint textlint-rule-no-mix-dearu-desumasu
       - run:    
           name: "Install dependent module"
           command: npm install

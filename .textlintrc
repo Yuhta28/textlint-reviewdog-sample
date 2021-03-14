@@ -1,5 +1,5 @@
 {
     "rules": {
-        "common-misspellings": true
+        "textlint-rule-no-mix-dearu-desumasu": true
     }
 }
